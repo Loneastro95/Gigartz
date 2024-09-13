@@ -1,0 +1,82 @@
+:root{
+    --nav-font: 1.2rem;
+    --header-font: 67px;
+    --text-para: 1.3rem;
+    --text-color: rgba(255, 255, 255, 0.5);
+    --sign-up-btn: linear-gradient(to right, rgba(13, 226, 214, 0.7), rgba(239, 41, 219, 0.7));
+    --purple-btn: rgb(118, 99, 231);
+    --download-background:  linear-gradient(169.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%);
+    --backgroundColor: rgba(8, 16, 41, 1);
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  .main-container{
+    display: flex;
+    padding: 50px 0;
+    min-height: 100vh;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+  }
+  .back-container{
+    display: flex;
+    flex-direction: column;
+    /* background: var(--download-background); */
+    width: 100%;
+    justify-content: space-between;
+    padding: 2.8rem;
+    border-radius: 30px;
+    height: 70vh;
+    background: radial-gradient(
+        circle at bottom left,
+        hsla(293, 60%, 88%, 0.8) 0%,   /* Darkened by 20% */
+        hsla(283deg, 75%, 57%, 0.8) 10%,  /* Darkened by 20% */
+        hsla(273deg, 74%, 53%, 0.7) 20%,  /* Darkened by 20% */
+        hsla(262deg, 73%, 48%, 0.7) 30%,  /* Darkened by 20% */
+        hsla(249deg, 73%, 45%, 0.6) 40%,  /* Darkened by 20% */
+        hsla(250deg, 63%, 40%, 0.6) 50%,  /* Darkened by 20% */
+        hsla(251deg, 55%, 36%, 0.5) 60%,  /* Darkened by 20% */
+        hsla(252deg, 48%, 32%, 0.5) 70%,  /* Darkened by 20% */
+        hsla(253deg, 46%, 28%, 0.4) 80%,  /* Darkened by 20% */
+        rgba(255, 255, 255, 0.3) 100%     /* Slightly darkened by reducing opacity */
+      );
+  
+  }
+
+  .download-header{
+    font-size: var(--header-font);
+    color: var(--text-color);
+    margin-left: 7rem;
+  }
+
+  .para-text{
+    font-size: var(--text-para);
+    color: var(--text-color);
+    width: 45%;
+    margin-left: 7rem;
+  }
+
+  .image-container{
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+  }
+
+  .dots{
+    position: relative;
+    margin-bottom: 50%;
+    left: 10%;
+    
+  }
+
+  .oval{
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    z-index: 2;
+  }

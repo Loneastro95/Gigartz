@@ -1,0 +1,20 @@
+:root{
+    --nav-font: 1.2rem;
+    --header-font: 52px;
+    --text-para: 1.3rem;
+    --text-color: rgba(255, 255, 255, 0.5);
+    --sign-up-btn: linear-gradient(to right, rgba(13, 226, 214, 0.7), rgba(239, 41, 219, 0.7));
+    --purple-btn: rgba(118, 99, 231, 1);
+    --download-background:  linear-gradient(169.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%);
+    --backgroundColor: rgba(8, 16, 41, 1);
+    --primary-gradient:  linear-gradient(to right, #AB00FB, #FF0063, #FF0000);
+
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  

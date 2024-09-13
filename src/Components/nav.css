@@ -1,0 +1,70 @@
+:root{
+    --nav-font: 1.2rem;
+    --header-font: 67px;
+    --text-para: 1rem;
+    --text-color: rgba(255, 255, 255, 1);
+    --sign-up-btn: linear-gradient(to right, rgba(13, 226, 214, 0.7), rgba(239, 41, 219, 0.7));
+    --purple-btn: rgba(118, 99, 231, 1);
+    --download-background:  linear-gradient(169.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%);
+    --backgroundColor: rgba(8, 16, 41, 1);
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.link-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    
+}
+  .nav-link{
+    color: var(--text-color);
+    font-size: var(--nav-font);
+  }
+  .nav-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a:-webkit-any-link:hover{
+    text-decoration: none;
+    color: var(--purple-btn);
+  }
+
+.navbar-toggler{
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .btn-container{
+    display: flex;
+
+  }
+
+  .signup-btn{
+    background: var(--sign-up-btn);
+    color: var(--text-color);
+    font-size: var(--nav-font);
+  }
+  .signin-btn{
+    background: var(--purple-btn);
+    color: var(--text-color);
+    font-size: var(--nav-font);
+  }
+
+  .vertical-line{
+    width: 2px;
+    height: 24px;
+    color: white;
+    margin: 0 10px;
+    align-self: center;
+    z-index: 1;
+  }

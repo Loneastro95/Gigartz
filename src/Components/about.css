@@ -1,0 +1,116 @@
+:root{
+    --nav-font: 1.2rem;
+    --header-font: 52px;
+    --text-para: 1.3rem;
+    --text-color: rgba(255, 255, 255, 0.5);
+    --sign-up-btn: linear-gradient(to right, rgba(13, 226, 214, 0.7), rgba(239, 41, 219, 0.7));
+    --purple-btn: rgba(118, 99, 231, 1);
+    --download-background:  linear-gradient(169.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%);
+    --backgroundColor: rgba(8, 16, 41, 1);
+    --primary-gradient:  linear-gradient(to right, #AB00FB, #FF0063, #FF0000);
+
+  }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-container{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+    min-height: 90vh;
+    
+  }
+  .about-text{
+    font-size: var(--header-font);
+    color: var(--text-color);
+    
+  }
+
+  .line{
+    width: 8rem;
+    height: 8px;
+    background: var(--primary-gradient);
+  }
+  .about-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .welcome-text{
+    font-size: 3rem;
+    color: var(--text-color);
+    inline-size: 50%;
+    overflow-wrap: break-word;
+  }
+
+  .welcome-para{
+    font-size: var(--text-para);
+    color: var(--text-color);
+  }
+
+
+  @media (max-width: 768px) {
+    .about {
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      gap: 2rem;
+      /* justify-content: center; */
+      align-items: center;
+      padding-top: 0;
+      text-align: center; /* Center-align content for mobile */
+    }
+  
+    .about-left {
+      width: 100%;
+    }
+  
+    .about-left img, .about-right img {
+      width: 90%; /* Allow images to scale better on mobile */
+      max-width: 400px; /* Ensure a reasonable maximum size */
+      height: auto;
+      margin: 1rem auto; /* Space between images and text */
+    }
+  
+    .about-text {
+      font-size: calc(var(--header-font) / 1.8); /* Slightly larger than dividing by 2 for better readability */
+      text-align: center;
+    }
+  
+    .welcome-text {
+      font-size: 1.7rem; /* Adjusted for better readability */
+      width: 100%;
+    }
+  
+    .welcome-para {
+      font-size: calc(var(--text-para) / 1.8); /* A bit larger for readability on small screens */
+      line-height: 1.6; /* Add more line spacing for better readability */
+    }
+  
+    .line {
+      width: 5rem; /* Adjust line size to fit mobile screen */
+      height: 6px;
+      margin: 0 auto; /* Center the line */
+    }
+
+    .about-right{
+      display: none;
+    }
+  }
+  
+  
