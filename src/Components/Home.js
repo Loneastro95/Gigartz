@@ -40,7 +40,7 @@ import {
   
   const Home = () => {
     return (
-      <Container className="content-container">
+      <Container className="content-container " id='home'>
         <div className="left-container">
           <h1 className="header">
             Transform your entertainment experience with{" "}

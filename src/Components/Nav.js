@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import {
     Container,
@@ -16,25 +16,53 @@ import {
 
 
 const NavbarPage = () => {
+
+  const [activeTab, setActiveTab] = useState('Home');
+
   return (
     <Navbar expand="lg">
-  <Container>
-    <Navbar.Brand href="#home" className="nav-link"><img src={logo} className='me-2'/>GIGATRZ</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler"/>
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mx-auto"> {/* Use mx-auto to center the navigation links */}
-        <a href="#home" className="nav-link">Download</a>
-        <a href="#download" className="nav-link">Features</a>
-        <a href="#link" className="nav-link">Contact</a>
-      </Nav>
-      <div className="ms-auto btn-container">
-        <Button className="signup-btn">Login</Button>
-        {/* <i class="vertical-line">|</i>
-        <Button className="signin-btn">SIGN IN</Button> */}
-      </div>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
+      <Container>
+        <Navbar.Brand href="#home" className="nav-link">
+          <img src={logo} className="me-2" alt="GigArtz Logo" />GigArtz
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto"> 
+            <a 
+              href="#home" 
+              className={`nav-link ${activeTab === 'Home' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('Home')}
+            >
+              Home
+            </a>
+            <a 
+              href="#about" 
+              className={`nav-link ${activeTab === 'About' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('About')}
+            >
+              About
+            </a>
+            <a 
+              href="#features" 
+              className={`nav-link ${activeTab === 'Features' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('Features')}
+            >
+              Features
+            </a>
+            <a 
+              href="#contact" 
+              className={`nav-link ${activeTab === 'Contact' ? 'active' : ''}`} 
+              onClick={() => setActiveTab('Contact')}
+            >
+              Contact
+            </a>
+          </Nav>
+          <div className="ms-auto btn-container">
+            <button className="signup-btn">Download</button>
+          </div>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
 
   )
 }

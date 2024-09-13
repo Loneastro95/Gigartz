@@ -28,7 +28,7 @@ import takingPic from "../assests/taking-pic.png"
 
 const About = () => {
   return (
-    <Container className="about">
+    <Container className="about" id="about">
       <div>
           <h1 className="about-text">About Us</h1>
           <div className="line"></div>

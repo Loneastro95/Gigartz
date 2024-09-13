@@ -27,7 +27,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Features = () => {
   return (
-    <Container className="features">
+    <Container className="features mt-5" id="features">
       <div className="feature-big-text">
         <h1 className="features-text">Find the Perfect Entertainment for Every Occasion</h1>
         <div className="line"></div>

@@ -4,6 +4,8 @@ import Home from './Components/Home';
 import Download from './Components/Download';
 import About from './Components/About';
 import Features from './Components/Features';
+import Footer from './Components/Footer';
+import { Route, Router, Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
      {/* <Download /> */}
      <About />
      <Features />
+     <Footer />
     </div>
   );
 }

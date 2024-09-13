@@ -22,6 +22,7 @@
     align-items: center;
     gap: 2rem;
     min-height: 90vh;
+    padding-top: 8rem;
   }
   /* .grid-container{
     display: grid;
