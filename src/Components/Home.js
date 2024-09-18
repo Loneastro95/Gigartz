@@ -43,10 +43,10 @@ import {
       <Container className="content-container " id='home'>
         <div className="left-container">
           <h1 className="header">
-            Transform your entertainment experience with{" "}
-            <span className="gig-colored"> Gigartz</span>
+            Transform your experiences with{" "}
+            <span className="gig-colored"> GigArtz</span>
           </h1>
-          <p className="text-para">
+          <p className="text-para mt-3">
             We bring the entertainment community together, offering a seamless
             experience where you can purchase tickets, book talented freelancers,
             and engage with performers like never before.

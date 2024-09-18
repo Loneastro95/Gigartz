@@ -24,6 +24,12 @@ import {
   faGooglePlay,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ticket from "../assests/Ticket.png";
+import event from "../assests/Event.png";
+import hint from "../assests/Hint.png";
+import people from "../assests/People.png";
+import access from "../assests/Accessibility.png";
+import payment from "../assests/Payment.png";
 
 const Features = () => {
   return (
@@ -48,7 +54,7 @@ const Features = () => {
         <div class="row">
           <div class="col-sm grid-item me-4">
             <div className="feature-icon-container">
-              <FontAwesomeIcon icon={faApple} className="feature-icon me-2" />
+            <img src={ticket} className=" me-2"/>
               <h2 className="feature-name">Event Discovery</h2>
             </div>
             <h2 className="title">Find the Perfect Show</h2>
@@ -60,7 +66,7 @@ const Features = () => {
           </div>
           <div class="col-sm grid-item me-4">
             <div className="feature-icon-container">
-              <FontAwesomeIcon icon={faApple} className="feature-icon me-2" />
+              <img src={event} className=" me-2"/>
               <h2 className="feature-name">Talent Booking</h2>
             </div>
             <h2 className="title">Book Top Entertainment Talent</h2>
@@ -71,7 +77,7 @@ const Features = () => {
           </div>
           <div class="col-sm grid-item">
             <div className="feature-icon-container">
-              <FontAwesomeIcon icon={faApple} className="feature-icon me-2" />
+            <img src={hint} className=" me-2"/>
               <h2 className="feature-name">Tipping and Reviews</h2>
             </div>
             <h2 className="title">Show Your Support</h2>
@@ -84,7 +90,7 @@ const Features = () => {
         <div class="row bottom-row-features">
           <div class="col-sm grid-item me-4">
             <div className="feature-icon-container">
-              <FontAwesomeIcon icon={faApple} className="feature-icon me-2" />
+            <img src={people} className=" me-2"/>
               <h2 className="feature-name">User Community</h2>
             </div>
             <h2 className="title">Join a Thriving Entertainment Community</h2>
@@ -95,7 +101,7 @@ const Features = () => {
           </div>
           <div class="col-sm grid-item me-4">
             <div className="feature-icon-container">
-              <FontAwesomeIcon icon={faApple} className="feature-icon me-2" />
+            <img src={access} className=" me-2"/>
               <h2 className="feature-name">Personalized Recommendations</h2>
             </div>
             <h2 className="title">Tailored for You</h2>
@@ -106,7 +112,7 @@ const Features = () => {
           </div>
           <div class="col-sm grid-item">
             <div className="feature-icon-container">
-              <FontAwesomeIcon icon={faApple} className="feature-icon me-2" />
+            <img src={payment} className=" me-2"/>
               <h2 className="feature-name">Flexible Payments</h2>
             </div>
             <h2 className="title">Seamless Payments</h2>

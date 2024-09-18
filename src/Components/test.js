@@ -37,12 +37,13 @@ import dancing from "../assests/dancing.png";
 
 import "./terms.css";
 import { useNavigate } from "react-router-dom";
+import "./test.css"
 
-const Terms = () => {
-  const navigate = useNavigate();
-  const handelBackNav = () => {
-    navigate("/");
-  };
+const Test = () => {
+    const navigate = useNavigate();
+    const handelBackNav = () => {
+      navigate("/");
+    };
   return (
     <Container className="terms-container"  style={{color:"rgba(255, 255, 255, 0.5)"}}>
       <div className="back-arrow-container">
@@ -476,7 +477,7 @@ const Terms = () => {
         </p>
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default Terms;
+export default Test

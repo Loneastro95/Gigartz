@@ -1,21 +1,21 @@
 import './App.css';
-import NavbarPage from './Components/Nav';
-import Home from './Components/Home';
-import Download from './Components/Download';
-import About from './Components/About';
-import Features from './Components/Features';
-import Footer from './Components/Footer';
 import { Route, Router, Routes } from 'react-router-dom';
+import Showall from './Components/Showall';
+import Terms from './Components/Terms';
+import Policy from './Components/Policy';
+import Test from './Components/test';
+import Privacytest from './Components/Privacytest';
 
 function App() {
   return (
     <div className="App">
-     <NavbarPage/>
-     <Home/>
-     {/* <Download /> */}
-     <About />
-     <Features />
-     <Footer />
+      <Routes>
+        <Route path="/" element={<Showall />} />
+        <Route path="/terms" element={<Terms/>}/>
+        <Route path='/policy' element={<Policy/>} />
+        <Route path='/test' element={<Test/>} />
+        <Route path='/privacytest' element={<Privacytest/>} />
+      </Routes>
     </div>
   );
 }

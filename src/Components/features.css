@@ -114,6 +114,10 @@
 
     }
 
+    .features{
+      padding-top: 0;
+    }
+
     .grid-item {
         width: 100%; 
         min-height: auto;

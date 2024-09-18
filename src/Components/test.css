@@ -1,0 +1,97 @@
+:root{
+    --nav-font: 1.2rem;
+    --header-font: 52px;
+    --text-para: 1.3rem;
+    --text-color: rgba(255, 255, 255, 0.5);
+    --sign-up-btn: linear-gradient(to right, rgba(13, 226, 214, 0.7), rgba(239, 41, 219, 0.7));
+    --purple-btn: rgba(118, 99, 231, 1);
+    --download-background:  linear-gradient(169.15deg, rgba(255, 255, 255, 0.4) 0%, rgba(238, 237, 237, 0.2) 96.79%);
+    --backgroundColor: rgba(8, 16, 41, 1);
+    --primary-gradient:  linear-gradient(to right, #AB00FB, #FF0063, #FF0000);
+  
+  }
+  
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .terms-container{
+        display: flex;
+        flex-direction: column;
+        color: var(--text-color);
+        align-items: center;
+        padding-bottom: 4rem;
+    }
+
+    .term-main-para{
+        inline-size: 70%;
+        overflow-wrap: break-word;
+        text-align: center; 
+    }
+.term-subheader{
+    margin-top: 2rem;
+}
+    .term-line{
+        width: 85%;
+        height: 1px;
+        background-color: var(--text-color);
+    }
+
+    .terms-body{
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    .term-smallheader{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 1.2rem;
+    }
+
+    .term-para{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    ul{
+        margin-left: 2.5rem;
+    }
+
+    .back-arrow-container{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding-top: 4rem;
+      margin: 0 auto;
+      width: 60%;
+    }
+    .term-header{
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .arrow{
+        font-size: var(--header-font);
+        cursor: pointer;
+        /* width: 10%; */
+    }
+
+    .arrow:hover{
+      color: #AB00FB;
+    }
+    @media (max-width: 768px){
+        .term-header{
+            font-size: calc(var(--header-font) / 2);
+            text-align:center;
+        }
+        .arrow{
+            display: none;
+        }
+    }
