@@ -37,6 +37,7 @@
     color: var(--text-color);
     font-size: var(--header-font);
     text-align: center;
+    animation: fade-in 3s
   }
    
   .text-para{
@@ -135,7 +136,14 @@
     font-size: 1.5rem;
   
   }
-
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 100;
+    }
+  }
 
   @media (max-width: 768px) {
     .content-container {

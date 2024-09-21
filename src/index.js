@@ -6,12 +6,15 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import Wrapper from './Components/Wrapper';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />  
+      <Wrapper>
+        <App /> 
+      </Wrapper> 
     </BrowserRouter>
 
   </React.StrictMode>

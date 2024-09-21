@@ -21,10 +21,12 @@ import {
   faFacebookF,
   faInstagram,
   faWhatsapp,
-  faArrowLeft
+  faArrowLeft,
+  faTiktok,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../assests/logo.png";
+import logo from "../assests/file.png";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
@@ -39,7 +41,7 @@ const Footer = () => {
   return (
     <Container className="footer-container mt-4" id="contact">
         <div className="white-line"></div>
-      <h3 className="bold-text"><img src={logo} className="me-1"/> GigArtz</h3>
+      <h3 className="bold-text "><img src={logo} className="me-1 logo-img"/> GigArtz</h3>
      <div className="container-flex-footer"> 
         <div className="row container-info">
           <div className="col-sm address-container">
@@ -56,29 +58,29 @@ const Footer = () => {
       
             <p className="address">surpport@gigartz.com</p>
             <div className="social-icons">
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faWhatsapp} size="2x" />
+              <a href="https://www.tiktok.com/@gigartzapp" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faTiktok} size="2x" />
               </a>
               <a
-                href="https://facebook.com/"
+                href="https://web.facebook.com/profile.php?id=61565721012297"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebookF} size="2x" />
               </a>
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/gigartzapp/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
               <a
-                href="https://twitter.com/"
+                href="https://www.linkedin.com/gigartz"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faXTwitter} size="2x" />
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
             </div>
           </div>

@@ -12,7 +12,7 @@ import {
     InputGroup,
   } from "react-bootstrap";
   import './nav.css';
-  import logo from "../assests/logo.png"
+  import LOGO from "../assests/file.png"
 
 
 const NavbarPage = () => {
@@ -22,8 +22,8 @@ const NavbarPage = () => {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home" className="nav-link">
-          <img src={logo} className="me-2" alt="GigArtz Logo" />GigArtz
+        <Navbar.Brand href="#home" className="nav-link brandname">
+          <img src={LOGO} className="me-2 logo-img" alt="GigArtz Logo" />GigArtz
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
