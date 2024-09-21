@@ -27,7 +27,7 @@ const NavbarPage = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto"> 
+          <Nav className="mx-auto me-0"> 
             <a 
               href="#home" 
               className={`nav-link ${activeTab === 'Home' ? 'active' : ''}`} 

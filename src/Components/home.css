@@ -19,12 +19,14 @@
   .content-container {
     min-height: 92vh;
     display: flex;
+    /* flex-direction: row-reverse; */
     align-items: flex-end;
     padding-bottom: 3rem;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     gap: 2rem;
+    padding-left: 2%;
 }
 
 .left-container{
@@ -43,36 +45,41 @@
   .text-para{
     font-size: var(--text-para);
     color: var(--text-color);
+    text-align: center;
   }
   
   .button-container{
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
   
   .right-container{
      width: 50%;
   }
+  
 
   .btn-colored{
     background:var(--primary-gradient);
-    width: 243px;
+    width: 172px;
     min-height: 50px;
     border-radius: 15px;
     color: #fff;
     font-weight: bold;
     transition: all ease-in-out 0.5s;
+    padding: 10px 10px;
+    border: none;
   }
 
   .btn-colored:hover{
-    padding: 20px 60px;
+    padding: 10px 10px;
     border: none;
     outline: none;
     position: relative;
     border-radius: 15px;
     background-color: rgb(0, 0, 0);
     cursor: pointer;
-    width: 243px;
+    width: 170px;
     border-radius: 15px;
     color: #fff;
     font-weight: bold;
@@ -84,14 +91,14 @@
   }
   
   .btn-no-color{
-    padding: 20px 60px;
+    padding: 10px 10px;
     border: none;
     outline: none;
     position: relative;
     border-radius: 15px;
     background-color: rgb(0, 0, 0);
     cursor: pointer;
-    width: 243px;
+    width: 170px;
     border-radius: 15px;
     color: #fff;
     font-weight: bold;
@@ -110,7 +117,7 @@
 
   .btn-no-color:hover{
     background:var(--primary-gradient);
-    width: 243px;
+    width: 172px;
     min-height: 50px;
     border-radius: 15px;
     color: #fff;
@@ -135,6 +142,9 @@
     color: var(--text-color);
     font-size: 1.5rem;
   
+  }
+  .google{
+    font-size: 1.1rem;
   }
   @keyframes fade-in {
     from {
@@ -179,6 +189,10 @@
     }
   
     .btn-colored, .btn-no-color {
+      width: 100%;
+    }
+
+    .btn-colored:hover, .btn-no-color:hover {
       width: 100%;
     }
   }

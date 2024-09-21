@@ -53,11 +53,12 @@ import {
           </p>
           <div className="button-container">
             <button className="btn-colored"> <FontAwesomeIcon icon={faApple} className="icon-color me-2" /> Apple Store</button>
-            <button className="btn-no-color"> <FontAwesomeIcon icon={faGooglePlay} className="icon-color me-2"  />Play Store</button>
+            <button className="btn-no-color"> <FontAwesomeIcon icon={faGooglePlay} className="icon-color me-2 google"  />Play Store</button>
           </div>
+          
         </div>
         <div className="right-container">
-            <img src={dancing} alt="home logo" className="home-logo" />
+            <img src={dancing} alt="Image by https://www.freepik.com/" className="" />
         </div>
       </Container>
   )

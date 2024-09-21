@@ -39,7 +39,7 @@ const About = () => {
             ref={image01Ref}
             src={backView}
             className={`image01 ${image01Visible ? "slidein" : ""}`}
-            alt="Back View"
+            alt="Image by https://www.freepik.com/"
           />
         </div>
         <div className="about-right">
@@ -47,7 +47,7 @@ const About = () => {
             ref={image02Ref}
             src={takingPic}
             className={`image02 ${image02Visible ? "fade-in" : ""}`}
-            alt="Taking Picture"
+            alt="Image by https://www.freepik.com/"
           />
         </div>
       </div>

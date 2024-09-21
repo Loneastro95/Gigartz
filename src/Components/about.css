@@ -84,6 +84,7 @@
   .welcome-para{
     font-size: var(--text-para);
     color: var(--text-color);
+    text-align: center;
   }
 
 

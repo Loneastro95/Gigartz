@@ -44,11 +44,13 @@
     position: fixed;
     
 }
-  .nav-link{
-    color: var(--text-color);
-    font-size: var(--nav-font);
-    margin-left: 1rem;
-  }
+.nav-link {
+  color: var(--text-color);
+  font-size: var(--nav-font);
+  margin-left: 1rem;
+  text-align: end;
+  padding-right: 1rem;
+}
 
   .nav-link.active {
     color: #fff;
@@ -76,11 +78,12 @@
 
   .btn-container{
     display: flex;
+    justify-content: center;
 
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
-    padding-left: 15%;
+    padding-right: 8%;
 }
 
   .signup-btn{
@@ -117,11 +120,14 @@
 
   @media (max-width: 768px){
     .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     padding: 0;
     margin-bottom: .5rem;
+    width: 50%;
+    margin-right: 0;
 }
+
+
   }
 
   
